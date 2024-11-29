@@ -94,3 +94,9 @@ update-image-ver:
 # NOTE: fails over VPN due to disallowed ip-block
 pull-summitslist-csv:
 	curl -sLo data/summitslist.csv "https://storage.sota.org.uk/summitslist.csv"
+
+filter-region-w7w:
+	@./scripts/filter-w7w.sh
+
+filter-region-w7w-kg:
+	@./scripts/filter-w7w-kg.sh
